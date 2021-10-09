@@ -6,6 +6,10 @@ import net.serenitybdd.core.pages.PageObject;
 
 public class HomePage extends PageObject {
 
-    @FindBy(className = "overlay-black")
-    private WebElementFacade ctdSubCategories;
+    @FindBy(id = "menu-item-550")
+    private WebElementFacade lnkEmpleos;
+
+    public WebElementFacade getLnkEmpleos() {
+        return lnkEmpleos;
+    }
 }
