@@ -1,7 +1,7 @@
 Feature: Sección Empleos
 
   @test1
-  Scenario: Validar vacantes de Automatizador en Anqioquia
+  Scenario: Validar vacantes de Automatizador en Antioquia
     Given Ingreso al sitio web "https://www.choucairtesting.com/"
     When doy clic en el link de empleos
     And doy clic en el boton ir al portal de empleos
