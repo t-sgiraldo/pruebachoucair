@@ -9,7 +9,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         features = "src/test/resources/com/choucairtesting/www/empleos/automatizacion/features/Empleos.feature",
-        //tags = "@test6",
+        tags = "@test2",
         glue = "com.choucairtesting.www.empleos.automatizacion.stepdefinitions",
         snippets = SnippetType.CAMELCASE)
 public class EmpleosRunner {

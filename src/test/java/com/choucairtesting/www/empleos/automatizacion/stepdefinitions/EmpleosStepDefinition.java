@@ -57,6 +57,23 @@ public class EmpleosStepDefinition {
 
     @Then("^Valido que aparezca un empleo de automatizador$")
     public void validoQueAparezcaUnEmpleoDeAutomatizador() {
-        magneto365Step.ValidarAutomatizador();
+        magneto365Step.validarAutomatizador();
+    }
+
+    @And("^doy clic en registrar hoja de vida y continuar$")
+    public void doyClicEnRegistrarHojaDeVidaYContinuar() {
+        magneto365Step.clicRegistrarHV();
+        magneto365Step.clicContinuar();
+    }
+
+    @Then("^valido pagina de registrar hoja de vida$")
+    public void validoPaginaDeRegistrarHojaDeVida() throws InterruptedException {
+        Thread.sleep(3000);
+        magneto365Step.validarPaginaRegistro();
+    }
+
+    @Then("^valido iconos redes sociales$")
+    public void validoIconosRedesSociales() {
+        magneto365Step.validarRedesSociales();
     }
 }
